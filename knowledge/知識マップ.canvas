@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"b0879f493dd04de9","type":"file","file":"obsidian/knowledge/ホーム.md","x":0,"y":0,"width":480,"height":440,"color":"5","subpath":"#分野から入る"},
+		{"id":"88eb608e50294a78","type":"file","file":"obsidian/knowledge/maps/システムと仕様.md","x":-720,"y":-580,"width":480,"height":440,"color":"5","subpath":"#まず読む"},
+		{"id":"8424c75292464e2e","type":"file","file":"obsidian/knowledge/maps/計測と同期.md","x":-720,"y":0,"width":480,"height":440,"color":"2","subpath":"#再利用する知識"},
+		{"id":"03ce53733f5743d9","type":"file","file":"obsidian/knowledge/maps/回路とファームウェア.md","x":-720,"y":580,"width":480,"height":440,"color":"1","subpath":"#元資料"},
+		{"id":"9ff191480a2f42e1","type":"file","file":"obsidian/knowledge/maps/機体と製造.md","x":720,"y":-580,"width":480,"height":440,"color":"3","subpath":"#機体と組立"},
+		{"id":"32496d74e0214989","type":"file","file":"obsidian/knowledge/maps/解析とシミュレーション.md","x":720,"y":0,"width":480,"height":440,"color":"4","subpath":"#再利用する知識"},
+		{"id":"871458aa3cf348ee","type":"file","file":"obsidian/knowledge/maps/発信とOSS運用.md","x":720,"y":580,"width":480,"height":440,"color":"6","subpath":"#説明と制作"},
+		{"id":"d27d58e2c5744e5f","type":"text","x":0,"y":580,"width":480,"height":330,"color":"5","text":"# 書く → つなぐ → 使う\n\n1. 自由メモに気づきを残す\n2. 出典と自分の理解を分ける\n3. 関連ノートへリンクをつなぐ\n4. 設計・実験・説明で再利用する\n\nこのCanvasも自由に並べ替えて使う。\n個人用の図は private/ に作成できる。"}
+	],
+	"edges":[
+		{"id":"21deb66af4ef409d","fromNode":"b0879f493dd04de9","fromSide":"left","toNode":"88eb608e50294a78","toSide":"right","toEnd":"none","color":"5"},
+		{"id":"cabe18a429344ed6","fromNode":"b0879f493dd04de9","fromSide":"left","toNode":"8424c75292464e2e","toSide":"right","toEnd":"none","color":"2"},
+		{"id":"7fda34639dbe446e","fromNode":"b0879f493dd04de9","fromSide":"left","toNode":"03ce53733f5743d9","toSide":"right","toEnd":"none","color":"1"},
+		{"id":"d4e456cb1e10476f","fromNode":"b0879f493dd04de9","fromSide":"right","toNode":"9ff191480a2f42e1","toSide":"left","toEnd":"none","color":"3"},
+		{"id":"d5786f3aa3834fa7","fromNode":"b0879f493dd04de9","fromSide":"right","toNode":"32496d74e0214989","toSide":"left","toEnd":"none","color":"4"},
+		{"id":"ec254ac539ef4fa0","fromNode":"b0879f493dd04de9","fromSide":"right","toNode":"871458aa3cf348ee","toSide":"left","toEnd":"none","color":"6"}
+	]
+}

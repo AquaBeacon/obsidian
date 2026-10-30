@@ -1,0 +1,10 @@
+/knowledge/private/
+.obsidian/
+.trash/
+.env
+.env.*
+!.env.example
+__pycache__/
+.local/
+Thumbs.db
+.DS_Store

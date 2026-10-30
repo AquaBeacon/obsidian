@@ -1,0 +1,107 @@
+filters:
+  and:
+    - file.inFolder("obsidian/knowledge")
+    - file.ext == "md"
+    - not:
+        - file.inFolder("obsidian/knowledge/templates")
+properties:
+  file.name:
+    displayName: ノート
+  note.kind:
+    displayName: 種類
+  note.status:
+    displayName: 整理状態
+  note.topics:
+    displayName: 関連分野
+  note.projects:
+    displayName: プロジェクト
+  note.sources:
+    displayName: 出典
+  file.mtime:
+    displayName: 更新日時
+views:
+  - type: table
+    name: 最近のノート
+    order:
+      - file.name
+      - kind
+      - status
+      - topics
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 30
+  - type: table
+    name: 未整理
+    filters:
+      or:
+        - file.inFolder("obsidian/knowledge/private/00_Inbox")
+        - status == "inbox"
+    order:
+      - file.name
+      - status
+      - topics
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 知識
+    filters: kind == "concept"
+    order:
+      - file.name
+      - status
+      - topics
+      - projects
+      - sources
+      - file.mtime
+  - type: table
+    name: 調査
+    filters: kind == "source"
+    order:
+      - file.name
+      - status
+      - topics
+      - sources
+      - file.mtime
+  - type: table
+    name: 実験
+    filters: kind == "experiment"
+    order:
+      - file.name
+      - status
+      - projects
+      - sources
+      - file.mtime
+  - type: table
+    name: 判断
+    filters: kind == "decision"
+    order:
+      - file.name
+      - status
+      - projects
+      - sources
+      - file.mtime
+  - type: table
+    name: 日誌
+    filters: kind == "journal"
+    order:
+      - file.name
+      - topics
+      - file.mtime
+    sort:
+      - property: file.name
+        direction: DESC
+  - type: table
+    name: 共有ノート
+    filters:
+      and:
+        - not:
+            - file.inFolder("obsidian/knowledge/private")
+    order:
+      - file.name
+      - kind
+      - status
+      - projects
+      - file.mtime
