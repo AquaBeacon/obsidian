@@ -12,6 +12,8 @@ status: evergreen
 
 ## 説明と制作
 
+- [[obsidian/knowledge/notes/発表用マスターテンプレート|発表用マスターテンプレート]]：現行のタイトル入り版・本文用マスターの場所、配色と文字サイズ。
+- [[obsidian/knowledge/notes/親機と子機の発表用アイコン|親機・子機の発表用アイコン]]：編集可能なPowerPoint図形、最新版とローカル保存場所。
 - [[docs/video-plan/README|開発整理・動画企画]]。
 - [[docs/video-plan/01_開発概要・目標・最終構想|開発概要・目標・最終構想]]。
 - [[docs/video-plan/02_一般向け60秒動画構成案|60秒動画の構成]]。
